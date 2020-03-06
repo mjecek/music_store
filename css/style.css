@@ -1,0 +1,43 @@
+body {
+    background-image: url("../images/music_tile.png");
+}
+
+.main {
+    background-color: white;
+    min-height: 100vh;
+    padding: 0;
+}
+
+.releases {
+    padding: 1rem;
+}
+
+.tabs .nav-item.active {
+    background-color: #007bff;
+}
+
+.tabs .nav-item.active>a {
+    color: white;
+}
+
+#store-logo {
+    height: 10rem;
+}
+
+.ranking-img {
+    height: 3.75rem;
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+}
+
+.end {
+    margin-top: 1rem;
+    height: 2rem;
+    bottom: 0;
+    left: 0;
+    background-color: lightgray;
+    text-align: center;
+}

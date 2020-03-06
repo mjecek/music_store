@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container main">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <a class="navbar-brand" href="#"><img id="store-logo" src="./images/music_shop.png" alt="music-store-logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#popular">Popular releases</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#genre">Browse by genre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#editorpick">Editor's Pick</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div>
+                    <div>
+                        <a href="">Cart (<span id="numOfItems">0</span>)</a>
+                    </div>
+                    <div>
+                        <a href="">Login / Register</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="./images/carousel/genesis_small.png">
+                        <source media="(min-width:600px)" srcset="./images/carousel/genesis.png">
+                        <img class="img-fluid" src="./images/carousel/genesis.png">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="./images/carousel/parkwaydrive_small.png">
+                        <source media="(min-width:600px)" srcset="./images/carousel/parkwaydrive.png">
+                        <img class="img-fluid" src="./images/carousel/parkwaydrive.png">
+                    </picture>
+                </div>
+                <div class="carousel-item">
+                    <picture>
+                        <source media="(max-width:600px)" srcset="./images/carousel/adtr_small.png">
+                        <source media="(min-width:600px)" srcset="./images/carousel/adtr.png">
+                        <img class="img-fluid" src="./images/carousel/adtr.png">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div id="popular">
+            <h1>Popular releases</h1>
+            <div class="row releases">
+                <div class="col-md-4">
+                    <img class="img-fluid" src="./images/album_cover/Journey_-_Frontiers.jpg" alt="Journey-Escape">
+                    <h3>Escape</h3>
+                    <h4>Journey</h4>
+                    <p>Lorem, ipsum dolor</p>
+                    <p>Price: <b>10.99$</b></p>
+                    <button class="btn btn-primary" data-title="Escape" data-artist="Journey" data-price="10.99" data-cover="./images/album_cover/Journey_-_Frontiers.jpg">Buy</button>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid" src="./images/album_cover/Alcest_-_Souvenirs_D_un_Autre_Monde.jpg" alt="Alcest">
+                    <h3>Souvenirs D un Autre Monde</h3>
+                    <h4>Alcest</h4>
+                    <p>Lorem, ipsum dolor</p>
+                    <p>Price: <b>10.99$</b></p>
+                    <button class="btn btn-primary" data-title="Souvenirs D un Autre Monde" data-artist="Alcest" data-price="10.99" data-cover="./images/album_cover/Alcest_-_Souvenirs_D_un_Autre_Monde.jpg">Buy</button>
+                </div>
+                <div class="col-md-4">
+                    <img class="img-fluid" src="./images/album_cover/Tears_For_Fears_-_Songs_From_The_Big_Chair.jpg" alt="Tears_For_Fears">
+                    <h3>Songs From The_Big Chair</h3>
+                    <h4>Tears_For_Fears</h4>
+                    <p>Lorem, ipsum dolor</p>
+                    <p>Price: <b>10.99$</b></p>
+                    <button class="btn btn-primary" data-title="Songs From The_Big Chair" data-artist="Tears_For_Fears" data-price="10.99" data-cover="./images/album_cover/Tears_For_Fears_-_Songs_From_The_Big_Chair.jpg">Buy</button>
+                </div>
+            </div>
+        </div>
+        <div id="genre">
+            <h1>Browse by genre</h1>
+            <div class="tabs">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pop">Pop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#rock">Rock</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#jazz">Jazz</a>
+                    </li>
+                </ul>
+                <div id="pop">
+                    <div class="container-fluid">
+                        <div class="row releases">
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/Belinda_Carlisle_-_Heaven_On_Earth.jpg" alt="Tears_For_Fears">
+                                <h4>Heaven On Earth</h4>
+                                <h5>Belinda Carlisle</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Heaven_On_Earth" data-artist="Belinda_Carlisle" data-price="10.99" data-cover="./images/album_cover/Belinda_Carlisle_-_Heaven_On_Earth.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/Blondie_-_Plastic_Letters.jpg" alt="Blondie">
+                                <h4>Plastic_Letters</h4>
+                                <h5>Blondie</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Plastic_Letters" data-artist="Blondie" data-price="10.99" data-cover="./images/album_cover/Blondie_-_Plastic_Letters.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/Cyndi_Lauper_-_Shes_So_Unusual.jpg" alt="Cyndi_Lauper">
+                                <h4>Shes_So_Unusual</h4>
+                                <h5>Cyndi_Lauper</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="hes_So_Unusual" data-artist="Cyndi_Lauper" data-price="10.99" data-cover="./images/album_cover/Cyndi_Lauper_-_Shes_So_Unusual.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/Genesis_-_Invisible_Touch.jpg" alt="Genesis">
+                                <h4>Invisible_Touch</h4>
+                                <h5>Genesis</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Invisible_Touch" data-artist="Genesis" data-price="10.99" data-cover="./images/album_cover/Genesis_-_Invisible_Touch.jpg">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="rock">
+                    <div class="container-fluid">
+                        <div class="row releases">
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/metallica-master of puppets.jpg" alt="Metallica">
+                                <h4>Master of Puppets</h4>
+                                <h5>Metalica</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Master of Puppets" data-artist="Metalica" data-price="10.99" data-cover="./images/album_cover/metallica-master of puppets.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/the police.jpg" alt="The Police">
+                                <h4>Wind of change</h4>
+                                <h5>The Police</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Plastic_Letters" data-artist="The Police" data-price="10.99" data-cover="./images/album_cover/the police.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/acdc-highway.jpg" alt="ACDC">
+                                <h4>Highway to Hell</h4>
+                                <h5>ACDC</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Highway" data-artist="ACDC" data-price="10.99" data-cover="./images/album_cover/acdc-highway.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/GunsnRosesAppetiteforDestructionalbumcover.jpg" alt="GunsnRoses">
+                                <h4>Appetite for Destructional</h4>
+                                <h5>GunsnRoses</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="AppetiteforDestructional" data-artist="GunsnRoses" data-price="10.99" data-cover="./images/album_cover/GunsnRosesAppetiteforDestructionalbumcover.jpg">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="jazz">
+                    <div class="container-fluid">
+                        <div class="row releases">
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/jazz-blue note-Kenny Dorham.jpg" alt="Kenny Dorham">
+                                <h4>Round about midnight</h4>
+                                <h5>Kenny Dorham</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Round about midnight at cafe Bohemia" data-artist="Kenny Dorham" data-price="10.99" data-cover="./images/album_cover/jazz-blue note-Kenny Dorham.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/blue train-john coltrane.jpg" alt="John Coltrane">
+                                <h4>Blue train</h4>
+                                <h5>John Coltrane</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Blue train" data-artist="John Coltrane" data-price="10.99" data-cover="./images/album_cover/blue train-john coltrane.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/jazz-Milt Jackson-Wizard of the vibes.jpg" alt="Milt Jackson">
+                                <h4>Wizard of the vibes</h4>
+                                <h5>ACDC</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="Wizard of the vibes" data-artist="Milt Jackson" data-price="10.99" data-cover="./images/album_cover/jazz-Milt Jackson-Wizard of the vibes.jpg">Buy</button>
+                            </div>
+                            <div class="col-md-3">
+                                <img class="img-fluid" src="./images/album_cover/jazz-Paul Bacon-The Amazing.jpg" alt="Paul Bacon">
+                                <h4>The Amazing</h4>
+                                <h5>Paul Bacon</h5>
+                                <p>Lorem, ipsum dolor</p>
+                                <p>Price: <b>10.99$</b></p>
+                                <button class="btn btn-primary" data-title="The Amazing" data-artist="Paul Bacon" data-price="10.99" data-cover="./images/album_cover/jazz-Paul Bacon-The Amazing.jpg">Buy</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="editorpick" class="container-fluid">
+            <h1>Editor's pick</h1>
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col"></th>
+                        <th scope="col">Title</th>
+                        <th scope="col">Artist</th>
+                        <th scope="col">Rating</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img class="ranking-img" src="./images/album_cover/Pink_Floyd_-_The_Dark_Side_Of_The_Moon.jpg" alt="Pink Floyd">
+                        </td>
+                        <td>The Dark Side Of The Moon</td>
+                        <td>Pink Floyd</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><img class="ranking-img" src="./images/album_cover/Pink_Floyd_-_The_Wall.jpg" alt="Pink Floyd"></td>
+                        <td>The Wall</td>
+                        <td>Pink Floyd</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">40</th>
+                        <td><img class="ranking-img" src="./images/album_cover/Genesis_-_Invisible_Touch.jpg" alt="Genesis"></td>
+                        <td>Invisible_Touch</td>
+                        <td>Genesis</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">65</th>
+                        <td><img class="ranking-img" src="./images/album_cover/Michael_Jackson_-_Bad.jpg" alt="Michael_Jackson"></td>
+                        <td>Bad</td>
+                        <td>Michael Jackson</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">72</th>
+                        <td><img class="ranking-img" src="./images/album_cover/Michael_Jackson_-_Dangerous.jpg" alt="Michael_Jackson"></td>
+                        <td>Dangerous</td>
+                        <td>Michael Jackson</td>
+                        <td>5</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="contact" class="container-fluid">
+            <h1>Contact Us</h1>
+            <form>
+                <div class="form-group">
+                    <label for="yourname">Your name</label>
+                    <input type="text" class="form-control" id="yourname">
+                </div>
+                <div class="form-group">
+                    <label for="yourmail">Your email</label>
+                    <input type="email" class="form-control" id="yourmail">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+        <div class="end">
+            <p>music----store</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.bootcss.com/jquery.tabslet.js/1.7.3/jquery.tabslet.min.js"></script>
+    <script>
+        $('.tabs').tabslet();
+    </script>
+</body>
+
+</html>
